@@ -83,17 +83,13 @@ body
 {
   color:black;
   width:80%;
-  /* margin-left: 200px;  */
-  /* text-align:center; */
-  /* margin-left:auto; */
-  /* margin-right:auto; */
 }
 
 
 
 
 
-.tableTop
+/* .tableTop
 {
   border-collapse:collapse;
   text-align:left;
@@ -105,7 +101,7 @@ body
 {
   text-align:left;
   vertical-align:top;
-}
+} */
 
 /*@media screen and (max-height: 450px)
 {
