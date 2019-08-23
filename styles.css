@@ -1,28 +1,29 @@
-body {
-    font-family: sans-serif;
+body
+{
+  font-family: sans-serif;
 }
 
-.content
+/* .content
 {
   max-width: 1280px;
 	margin: auto;
-}
+} */
 
+/* nav */
 .sidenav
 {
   height: 100%;
-  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
   padding-top: 20px;
 }
 
 .sidenavli
 {
+  height: 100%;
   padding: 6px 6px 6px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -36,15 +37,61 @@ body {
   text-decoration: underline;
 }
 
+.sidenav-container
+{
+  width: 200px;
+  height: 100%;
+  /* overflow-y: hidden; */
+  overflow: hidden;
+}
+
+.sidenav-container iframe
+{
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* nav */
 
 .mainpara
 {
   color:black;
-  width:90%;
+  margin-left: 200px; 
+  width:auto;
+
   text-align:justify;
+  /* margin-left:auto; */
+  margin-right:auto;
+}
+
+.mainpara-container
+{
+  color:black;
+  /* margin-left: 200px;  */
+  width:auto;
+
+  text-align:center;
+  /* margin-left:auto; */
   margin-left:auto;
   margin-right:auto;
 }
+
+.mainpara-container iframe
+{
+  color:black;
+  width:80%;
+  /* margin-left: 200px;  */
+  /* text-align:center; */
+  /* margin-left:auto; */
+  /* margin-right:auto; */
+}
+
+
+
+
 
 .tableTop
 {
@@ -60,25 +107,6 @@ body {
   vertical-align:top;
 }
 
-.iframe-container
-{
-  margin-left: 200px; 
-  /* Same as the width of the sidenav */
-  /* max-height: fit-content; */
-  overflow: hidden;
-  /* // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
-  padding-top: 56.25%;
-  position: relative;
-}
-
-.iframe-container iframe {
-  border: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
 /*@media screen and (max-height: 450px)
 {
   .sidenav {padding-top: 15px;}
