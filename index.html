@@ -1,31 +1,61 @@
 <!DOCTYPE html>
+<!-- <style>
+	nav {
+	float: left;
+	width: 30%;
+	height: 300px; /* only for demonstration, should be removed */
+	background: #ccc;
+	padding: 20px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	list-style-type: none;
+	padding: 0;
+	}
+
+	article {
+	float: left;
+	padding: 20px;
+	width: 70%;
+	background-color: #f1f1f1;
+	height: 300px; /* only for demonstration, should be removed */
+	}
+
+	section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style> -->
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="styles.css">
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
 		<title>Yi-Chung Chen's Website</title>
 	</head>
 	<body>
 		<div class="sidenav">
 			<ul class="sidenavli">
-				<li id="Home" onClick="reload('Home');"><a>Home</a></li>
-				<li id="CV" onClick="reload('CV');"><a>C.V.</a></li>
-    		<li id="Research" onClick="reload('Research');"><a>Research</a></li>
-				<li id="Publications" onClick="reload('Publications');"><a>Publications</a></li>
-				<li id="Projects" onClick="reload('Projects');"><a>Projects</a></li>
-				<li id="Download" onClick="reload('Download');"><a>Download</a></li>
-				<li id="Courses" onClick="reload('Courses');"><a>Courses</a></li>
-				<li id="Links" onClick="reload('Links');"><a>Links</a></li>
-				<li id="Contact" onClick="reload('Contact');"><a>Contact</a></li>
-				<li id="Resource" onClick="reload('Resource');"><a>Resource</a></li>
-		</ul>
+				<li id="Home"><a target="main_info" href="home.html">Home</a></li>
+				<li id="CV"><a target="main_info" href="cv.html">C.V.</a></li>
+				<li id="Research"><a target="main_info" href="research.html">Research</a></li>
+				<li id="Publications"><a target="main_info" href="publications.html">Publications</a></li>
+				<li id="Projects"><a target="main_info" href="projects.html">Projects</a></li>
+				<li id="Download"><a target="main_info" href="download.html">Download</a></li>
+				<li id="Courses"><a target="main_info" href="courses.html">Courses</a></li>
+				<li id="Links"><a target="main_info" href="links.html">Links</a></li>
+				<li id="Contact"><a target="main_info" href="contact.html">Contact</a></li>
+				<li id="Resource"><a target="main_info" href="resource.html">Resource</a></li>
+			</ul>
 		</div>
-		<div class="main" id=main>
-			<img src="XXX" onerror="reload('Home');" alt="">
+		<div class="iframe-container">	
+			<iframe src="home.html" name="main_info" style="border:none;" scrolling="no" frameborder="0" ></iframe>
 		</div>
 
-		<script>
+		<!-- <script>
 			function reload(text)
 			{
 	      if (text === 'Home')
@@ -69,6 +99,6 @@
 	      	$('#main').load("projects.html");
 	      }
 			}
-		</script>
+		</script> -->
   </body>
 </html>
