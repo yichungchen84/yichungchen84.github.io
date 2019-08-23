@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<title>Yi-Chung Chen's Website</title>
+	</head>
+	<body>
+		<div class="sidenav">
+			<ul class="sidenavli">
+				<li id="Home" onClick="reload('Home');"><a>Home</a></li>
+				<li id="CV" onClick="reload('CV');"><a>C.V.</a></li>
+    		<li id="Research" onClick="reload('Research');"><a>Research</a></li>
+				<li id="Publications" onClick="reload('Publications');"><a>Publications</a></li>
+				<li id="Projects" onClick="reload('Projects');"><a>Projects</a></li>
+				<li id="Download" onClick="reload('Download');"><a>Download</a></li>
+				<li id="Courses" onClick="reload('Courses');"><a>Courses</a></li>
+				<li id="Links" onClick="reload('Links');"><a>Links</a></li>
+				<li id="Contact" onClick="reload('Contact');"><a>Contact</a></li>
+				<li id="Resource" onClick="reload('Resource');"><a>Resource</a></li>
+		</ul>
+		</div>
+		<div class="main" id=main>
+			<img src="XXX" onerror="reload('Home');" alt="">
+		</div>
+
+		<script>
+			function reload(text)
+			{
+	      if (text === 'Home')
+				{
+	      	$('#main').load("home.html");
+	      }
+				if (text === 'Research')
+				{
+	      	$('#main').load("research.html");
+	      }
+				if (text === 'CV')
+				{
+	      	$('#main').load("cv.html");
+	      }
+				if (text === 'Publications')
+				{
+	      	$('#main').load("publications.html");
+	      }
+				if (text === 'Download')
+				{
+	      	$('#main').load("download.html");
+	      }
+				if (text === 'Courses')
+				{
+	      	$('#main').load("courses.html");
+	      }
+				if (text === 'Links')
+				{
+	      	$('#main').load("links.html");
+	      }
+				if (text === 'Contact')
+				{
+	      	$('#main').load("contact.html");
+	      }
+				if (text === 'Resource')
+				{
+	      	$('#main').load("resource.html");
+	      }
+				if (text === 'Projects')
+				{
+	      	$('#main').load("projects.html");
+	      }
+			}
+		</script>
+  </body>
+</html>

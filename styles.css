@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+}
+.content
+{
+  max-width: 1280px;
+	margin: auto;
+}
+
+.sidenav
+{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenavli
+{
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenavli li:hover
+{
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+.main
+{
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.mainpara
+{
+  color:black;
+  width:90%;
+  text-align:justify;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tableTop
+{
+  border-collapse:collapse;
+  text-align:left;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tableSub
+{
+  text-align:left;
+  vertical-align:top;
+}
+
+/*@media screen and (max-height: 450px)
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/
